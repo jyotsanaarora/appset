@@ -18,7 +18,7 @@ spec:
     spec:
       source:
         repoURL: 'https://github.com/jyotsanaarora/bgd'
-        targetRevision: 'HEAD'
+        targetRevision: HEAD
         path: app/overlays/default/
       project: default
       syncPolicy:
