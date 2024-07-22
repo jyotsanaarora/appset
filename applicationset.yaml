@@ -19,7 +19,7 @@ spec:
       source:
         repoURL: 'https://github.com/christianh814/bgd'
         targetRevision: '{{head_sha}}'
-        path: app/overlays/default/
+        path: app/base
       project: default
       syncPolicy:
         automated:
