@@ -14,11 +14,11 @@ spec:
       requeueAfterSeconds: 300
   template:
     metadata:
-      name: 'bgd-{{branch}}-{{number}}'
+      name: 'bgd-test-app'
     spec:
       source:
         repoURL: 'https://github.com/jyotsanaarora/bgd'
-        targetRevision: '{{head_sha}}'
+        targetRevision: 'HEAD'
         path: app/overlays/default/
       project: default
       syncPolicy:
@@ -29,4 +29,4 @@ spec:
           - CreateNamespace=true
       destination:
         server: https://kubernetes.default.svc
-        namespace: 'bgd-{{branch}}-{{number}}'
+        namespace: 'bgd-test-app'
